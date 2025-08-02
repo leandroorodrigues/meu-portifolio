@@ -1,48 +1,162 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-    <title>Portifolio</title>
+    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a href="index.html" class="cabecalho__menu__links">Home</a>
-            <a href="about.html" class="cabecalho__menu__links">Sobre mim</a>
+    <header>
+        <nav class="container">
+            <div class="logo">Meu Portfólio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Seja bem-vindo(a) ao
-                <strong class="destaque__titulo"> meu Portifólio Profissional!
-                </strong>
-            </h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Leandro Rodrigues, desenvolvedor
-                Full-stack em formação com foco em <strong>Java, Javascript, HTML e CSS</strong>.</p>
-            <div class="apresentacao__links">
-                <a class="apresentacao__links__navegacao" href="https://github.com/leandroorodrigues" target="_blank">
-                    <img src="assets/github.png" alt="logo github" width="30px">
-                    GitHub
-                </a>
-                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/leandroorodrigues/"
-                    target="_blank">
-                    <img src="assets/linkedin.png" alt="logo linkedin" width="30px">
-                    Linkedin
-                </a>
-            </div>
-        </section>
-        <img class="apresentacao__imagem" src="./assets/perfil.jpg" alt="Foto da Joana Santos programando">
-    </main>
-    <footer class="rodape">
-        <p>Desenvolvido por Leandro Rodrigues</p>
-    </footer>
-</body>
 
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Desenvolvedor Full Stack</h1>
+            <p>Criando experiências digitais inovadoras com tecnologias modernas. Transformo ideias em soluções web elegantes e funcionais.</p>
+            <a href="#projects" class="cta-button">Ver Projetos</a>
+        </div>
+    </section>
+
+    <section id="projects" class="projects fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🚀</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">E-commerce Platform</h3>
+                    <p class="project-desc">Plataforma completa de e-commerce com sistema de pagamentos, gestão de inventário e painel administrativo. Interface moderna e responsiva com excelente UX.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📱</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Task Management App</h3>
+                    <p class="project-desc">Aplicativo de gerenciamento de tarefas com funcionalidades avançadas como colaboração em tempo real, notificações e análise de produtividade.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Socket.io</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎨</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Design System</h3>
+                    <p class="project-desc">Sistema de design completo com componentes reutilizáveis, guia de estilo e documentação interativa. Acelera o desenvolvimento de novos projetos.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Storybook</span>
+                        <span class="tech-tag">Styled Components</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Analytics Dashboard</h3>
+                    <p class="project-desc">Dashboard interativo para visualização de dados com gráficos dinâmicos, filtros avançados e relatórios personalizáveis em tempo real.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🔒</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Auth Service</h3>
+                    <p class="project-desc">Serviço de autenticação robusto com JWT, OAuth2, autenticação de dois fatores e gerenciamento granular de permissões.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">OAuth2</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🌐</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Demo</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">API Gateway</h3>
+                    <p class="project-desc">Gateway de API escalável com rate limiting, cache inteligente, balanceamento de carga e monitoramento em tempo real.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Prometheus</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact fade-in-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Vamos Trabalhar Juntos?</h2>
+                <p>Estou sempre aberto a discutir novos projetos, oportunidades criativas ou parcerias. Entre em contato comigo!</p>
+                <a href="mailto:lrodriguespessoal@gmail.com" class="cta-button">Entrar em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Leandro Rodrigues. Desenvolvido pela Claude.ai e ajustado por mim.</p>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
 </html>
