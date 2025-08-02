@@ -331,6 +331,10 @@
             .project-card {
                 margin: 0 10px;
             }
+
+            footer {
+                font-size: 1rem;
+            }
         }
 
         /* Scroll animations */
